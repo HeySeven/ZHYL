@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>智慧医疗</title>
+    <title>医院列表-智慧医疗</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="renderer" content="webkit">
@@ -22,95 +22,94 @@
     <script src="plugins/fastclick/fastclick.js"></script>
 </head>
 <body>
-
-<div class="view has-tabbar">
+<div class="header">
+    <div class="search-wrap normal-search">
+        <div class="weui-search-bar" id="searchBar">
+            <form class="weui-search-bar__form">
+                <div class="weui-search-bar__box">
+                    <i class="weui-icon-search"></i>
+                    <input type="search" class="weui-search-bar__input" id="searchInput" placeholder="搜索" required="">
+                    <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+                </div>
+                <label class="weui-search-bar__label" id="searchText">
+                    <i class="weui-icon-search"></i>
+                    <span>搜索</span>
+                </label>
+            </form>
+            <a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+        </div>
+    </div>
+</div>
+<div class="view has-navbar has-tabbar">
     <div class="page">
-        <div class="index-slide">
-            <div class="header">
-                <div class="header-left">
-                    <a href="city-change.html" class="city-select">青岛 <i class="iconfont icon-09"></i></a>
-                </div>
-                <div class="search-wrap">
-                    <div class="weui-search-bar" id="searchBar">
-                        <form class="weui-search-bar__form">
-                            <div class="weui-search-bar__box">
-                                <i class="weui-icon-search"></i>
-                                <input type="search" class="weui-search-bar__input" id="searchInput" placeholder="搜索" required="">
-                                <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
-                            </div>
-                            <label class="weui-search-bar__label" id="searchText">
-                                <i class="weui-icon-search"></i>
-                                <span>搜索</span>
-                            </label>
-                        </form>
-                        <a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
-                    </div>
-                </div>
-
-            </div>
-            <!-- Swiper -->
-            <div class="swiper-container" id="index-slide">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a class="slide-link" href="###" style="background-image: url(https://modao.cc/uploads3/images/1083/10834094/raw_1499322330.png)"></a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a class="slide-link" href="###" style="background-image: url(https://modao.cc/uploads3/images/1083/10834094/raw_1499322330.png)"></a>
-                    </div>
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
-        <div class="index-menu-a">
-            <a href="hospital-list.html" class="menu-grid ui-border-r">
-                <dl>
-                    <dt>挂号预约</dt>
-                    <dd>提前预约无需排队</dd>
-                </dl>
-                <i class="iconfont icon-18"></i>
-            </a>
-            <a href="###" class="menu-grid">
-                <dl>
-                    <dt>签约</dt>
-                    <dd>提前预约无需排队</dd>
-                </dl>
-                <i class="iconfont icon-fenxi6"></i>
-            </a>
-        </div>
-        <div class="weui-grids index-menu-b">
-            <a href="###" class="weui-grid js_grid">
-                <div class="weui-grid__icon">
-                    <i class="iconfont icon-07"></i>
-                </div>
-                <p class="weui-grid__label">报告单</p>
-            </a>
-            <a href="###" class="weui-grid js_grid">
-                <div class="weui-grid__icon">
-                    <i class="iconfont icon-03"></i>
-                </div>
-                <p class="weui-grid__label">就诊记录</p>
-            </a>
-            <a href="###" class="weui-grid js_grid">
-                <div class="weui-grid__icon">
-                    <i class="iconfont icon-20"></i>
-                </div>
-                <p class="weui-grid__label">就诊评价</p>
-            </a>
-            <a href="###" class="weui-grid js_grid">
-                <div class="weui-grid__icon">
-                    <i class="iconfont icon-13"></i>
-                </div>
-                <p class="weui-grid__label">商城</p>
-            </a>
-        </div>
-
         <div class="weui-panel weui-panel_access my-panel">
-            <div class="weui-panel__hd">
-                <a href="hospital-list.html" class="pull-right">+More</a>
-                医院列表(20)
-            </div>
+            <!--<div class="weui-panel__hd">医院列表(20)</div>-->
             <div id="list" class="weui-panel__bd">
+                <a href="hospital-detail.html" class="weui-media-box weui-media-box_appmsg">
+                    <div class="weui-media-box__hd">
+                        <img class="weui-media-box__thumb" src="https://modao.cc/uploads3/images/1084/10845513/raw_1499332368.jpeg">
+                    </div>
+                    <div class="weui-media-box__bd">
+                        <h4 class="weui-media-box__title">青岛市市北博厚社区医院</h4>
+                        <p class="weui-media-box__desc">三级甲等</p>
+                        <p class="desc">
+                            <span class="pull-right">3.8km</span>
+                            <span class="tag">预约</span>
+                        </p>
+                    </div>
+                </a>
+                <a href="hospital-detail.html" class="weui-media-box weui-media-box_appmsg">
+                    <div class="weui-media-box__hd">
+                        <img class="weui-media-box__thumb" src="https://modao.cc/uploads3/images/1084/10845513/raw_1499332368.jpeg">
+                    </div>
+                    <div class="weui-media-box__bd">
+                        <h4 class="weui-media-box__title">青岛市市北博厚社区医院</h4>
+                        <p class="weui-media-box__desc">三级甲等</p>
+                        <p class="desc">
+                            <span class="pull-right">3.8km</span>
+                            <span class="tag">预约</span>
+                        </p>
+                    </div>
+                </a>
+                <a href="hospital-detail.html" class="weui-media-box weui-media-box_appmsg">
+                    <div class="weui-media-box__hd">
+                        <img class="weui-media-box__thumb" src="https://modao.cc/uploads3/images/1084/10845513/raw_1499332368.jpeg">
+                    </div>
+                    <div class="weui-media-box__bd">
+                        <h4 class="weui-media-box__title">青岛市市北博厚社区医院</h4>
+                        <p class="weui-media-box__desc">三级甲等</p>
+                        <p class="desc">
+                            <span class="pull-right">3.8km</span>
+                            <span class="tag">预约</span>
+                        </p>
+                    </div>
+                </a>
+                <a href="hospital-detail.html" class="weui-media-box weui-media-box_appmsg">
+                    <div class="weui-media-box__hd">
+                        <img class="weui-media-box__thumb" src="https://modao.cc/uploads3/images/1084/10845513/raw_1499332368.jpeg">
+                    </div>
+                    <div class="weui-media-box__bd">
+                        <h4 class="weui-media-box__title">青岛市市北博厚社区医院</h4>
+                        <p class="weui-media-box__desc">三级甲等</p>
+                        <p class="desc">
+                            <span class="pull-right">3.8km</span>
+                            <span class="tag">预约</span>
+                        </p>
+                    </div>
+                </a>
+                <a href="hospital-detail.html" class="weui-media-box weui-media-box_appmsg">
+                    <div class="weui-media-box__hd">
+                        <img class="weui-media-box__thumb" src="https://modao.cc/uploads3/images/1084/10845513/raw_1499332368.jpeg">
+                    </div>
+                    <div class="weui-media-box__bd">
+                        <h4 class="weui-media-box__title">青岛市市北博厚社区医院</h4>
+                        <p class="weui-media-box__desc">三级甲等</p>
+                        <p class="desc">
+                            <span class="pull-right">3.8km</span>
+                            <span class="tag">预约</span>
+                        </p>
+                    </div>
+                </a>
                 <a href="hospital-detail.html" class="weui-media-box weui-media-box_appmsg">
                     <div class="weui-media-box__hd">
                         <img class="weui-media-box__thumb" src="https://modao.cc/uploads3/images/1084/10845513/raw_1499332368.jpeg">
