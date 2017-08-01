@@ -100,7 +100,7 @@ img {
   .weui-cell__hd {
     i {
       margin-right: .1rem;
-      font-size: $fz-normal;
+      font-size: $fz-larger;
       color: $color-info;
     }
   }
@@ -778,5 +778,51 @@ table {
   }
   .des-info {
     color: $color-danger;
+  }
+}
+.bg-white{
+  background-color: #ffffff;
+}
+.weui-article {
+  h1{
+    text-align: center;
+    margin-bottom: .1rem;
+  }
+  .date-article{
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: .1rem;
+    font-size: $fz-xs;
+    color: $color-lighter;
+    text-align: right;
+    margin-bottom: .2rem;
+  }
+  p{
+    font-size: $fz-sm;
+  }
+}
+
+.center-header{
+  padding-bottom: .2rem;
+  min-height: 3rem;
+  background-color: #ffffff;
+  text-align: center;
+  .head-img{
+    padding: .2rem;
+    .author-img{
+      display: inline-block;
+      width: 1.2rem;
+      height: 1.2rem;
+      @include background-size(cover);
+      @include border-radius(50%);
+    }
+  }
+  dl{
+    dt{
+      font-size: $fz-normal;
+    }
+    dd{
+      font-size: $fz-xs;
+      color: $color-lighter;
+    }
   }
 }
