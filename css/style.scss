@@ -826,3 +826,10 @@ table {
     }
   }
 }
+.price{
+  font-size: .32rem;
+  color: $color-danger;
+  &.done{
+    color: $color-lighter;
+  }
+}
