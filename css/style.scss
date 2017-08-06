@@ -66,9 +66,11 @@ img {
     height: 4.32rem;
   }
 }
-.weui-select-modal .weui_cells{
+
+.weui-select-modal .weui_cells {
   max-height: 4.32rem;
 }
+
 .toolbar {
   font-size: .32rem;
   .toolbar-inner {
@@ -83,6 +85,7 @@ img {
     font-size: .32rem;
   }
 }
+
 .swiper-wrapper {
   img {
     width: 100%;
@@ -780,15 +783,17 @@ table {
     color: $color-danger;
   }
 }
-.bg-white{
+
+.bg-white {
   background-color: #ffffff;
 }
+
 .weui-article {
-  h1{
+  h1 {
     text-align: center;
     margin-bottom: .1rem;
   }
-  .date-article{
+  .date-article {
     border-bottom: 1px solid #e5e5e5;
     padding-bottom: .1rem;
     font-size: $fz-xs;
@@ -796,19 +801,19 @@ table {
     text-align: right;
     margin-bottom: .2rem;
   }
-  p{
+  p {
     font-size: $fz-sm;
   }
 }
 
-.center-header{
+.center-header {
   padding-bottom: .2rem;
   min-height: 3rem;
   background-color: #ffffff;
   text-align: center;
-  .head-img{
+  .head-img {
     padding: .2rem;
-    .author-img{
+    .author-img {
       display: inline-block;
       width: 1.2rem;
       height: 1.2rem;
@@ -816,20 +821,55 @@ table {
       @include border-radius(50%);
     }
   }
-  dl{
-    dt{
+  dl {
+    dt {
       font-size: $fz-normal;
     }
-    dd{
+    dd {
       font-size: $fz-xs;
       color: $color-lighter;
     }
   }
 }
-.price{
+
+.price {
   font-size: .32rem;
   color: $color-danger;
-  &.done{
+  &.done {
     color: $color-lighter;
   }
 }
+
+.table-wrap {
+  background-color: #ffffff;
+  overflow: auto;
+  .table {
+    th, td {
+      font-weight: normal;
+      box-sizing: border-box;
+      padding:10px 5px;
+      text-align: center;
+      border: 1px solid #eeeeee;
+      font-size: .24rem;
+      line-height: .32rem;
+    }
+    td{
+      width: 2rem;
+      text-align: left;
+      color: $color-light;
+    }
+    th {
+      font-size: .26rem;
+      white-space: nowrap;
+      background-color: rgba(118, 172, 248, 0.1);
+    }
+  }
+}
+
+.fees-name{
+  width: 3rem;
+}
+
+
+
+
