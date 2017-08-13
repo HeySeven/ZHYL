@@ -97,6 +97,30 @@ img {
   padding: .2rem .3rem;
 }
 
+.weui-cell_link {
+  font-size: $fz-sm;
+  color: $color-normal;
+}
+
+.weui-panel__ft {
+  .weui-cell_link {
+    font-size: $fz-xs;
+    color: $color-lighter;
+    line-height: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    i {
+      position: relative;
+      top: -1px;
+      vertical-align: middle;
+      font-size: .32rem;
+      color: $color-info;
+      margin-right: .1rem;
+    }
+  }
+}
+
 .weui-cells {
   margin-top: 0;
   font-size: $fz-sm;
@@ -107,12 +131,27 @@ img {
       color: $color-info;
     }
   }
-  .weui-cell_access {
-    .weui-cell__ft:after {
-      width: 10px;
-      height: 10px;
-      border-width: 1px 1px 0 0;
-    }
+}
+
+.weui-cell_access {
+  .weui-cell__ft:after {
+    width: 10px;
+    height: 10px;
+    border-width: 1px 1px 0 0;
+  }
+}
+
+.weui-select {
+  height: .4rem;
+  line-height: .4rem;
+  text-align: right;
+}
+
+.weui-cell_select {
+  .weui-cell__bd:after {
+    width: 10px;
+    height: 10px;
+    border-width: 1px 1px 0 0;
   }
 }
 
@@ -481,6 +520,14 @@ img {
   font-size: .28rem;
   margin-bottom: .04rem;
   line-height: 1;
+  .pull-right {
+    color: $color-lighter;
+    font-size: $fz-xs;
+    i {
+      vertical-align: middle;
+      font-size: .32rem;
+    }
+  }
   small {
     color: $color-danger;
   }
@@ -838,6 +885,9 @@ table {
   &.done {
     color: $color-lighter;
   }
+  &.price-cross{
+    text-decoration: line-through;
+  }
 }
 
 .table-wrap {
@@ -847,13 +897,13 @@ table {
     th, td {
       font-weight: normal;
       box-sizing: border-box;
-      padding:10px 5px;
+      padding: 10px 5px;
       text-align: center;
       border: 1px solid #eeeeee;
       font-size: .24rem;
       line-height: .32rem;
     }
-    td{
+    td {
       width: 2rem;
       text-align: left;
       color: $color-light;
@@ -866,10 +916,29 @@ table {
   }
 }
 
-.fees-name{
+.fees-name {
   width: 3rem;
 }
 
-
+.my-preview {
+  .table-rostering {
+    padding-left: 0;
+    padding-bottom: 0;
+    td{
+      text-align: left;
+    }
+    th{
+white-space: nowrap;
+    }
+    td, th {
+      width: auto;
+      padding: .1rem;
+      height: auto;
+      &.name{
+        width: 2rem;
+      }
+    }
+  }
+}
 
 
