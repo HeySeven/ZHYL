@@ -448,6 +448,7 @@ img {
 
 .my-panel {
   margin-top: $space-sm;
+  display: block;
   .weui-form-preview {
     &:before {
       display: none;
@@ -493,6 +494,7 @@ img {
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
+      font-size: .24rem;
     }
     .statu-tag {
       position: absolute;
