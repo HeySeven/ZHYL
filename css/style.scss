@@ -86,6 +86,40 @@ img {
   }
 }
 
+.weui-picker-modal {
+  height: 5.2rem;
+  .picker-items {
+    font-size: .28rem;
+  }
+  .picker-modal-inner {
+    height: 4.32rem;
+  }
+}
+
+.picker-calendar-month-picker, .picker-calendar-year-picker {
+  line-height: .88rem;
+}
+
+.picker-calendar-month-picker .current-month-value, .picker-calendar-year-picker .current-month-value, .picker-calendar-month-picker .current-year-value, .picker-calendar-year-picker .current-year-value {
+  height: .88rem;
+}
+
+.picker-calendar-month-picker a.icon-only, .picker-calendar-year-picker a.icon-only {
+  height: .88rem;
+  line-height: .78rem;
+}
+
+.picker-calendar-week-days {
+  height: .36rem;
+  font-size: .22rem;
+  .picker-calendar-week-day {
+    line-height: .36rem;
+  }
+  & + .picker-calendar-months {
+    height: 4.76rem;
+  }
+}
+
 .swiper-wrapper {
   img {
     width: 100%;
@@ -256,7 +290,10 @@ img {
   }
 
 }
-
+i.icon.icon-next, i.icon.icon-prev {
+  width: .3rem;
+  height: .3rem;
+}
 .tabbar {
   position: fixed;
   left: 0;
@@ -460,6 +497,16 @@ img {
   padding: .2rem .3rem .1rem;
   font-size: .32rem;
   color: $color-normal;
+  a{
+    color: $color-normal;
+  }
+  em{
+    &.pull-right{
+      padding-top: 0;
+      font-size: .28rem;
+      color: $color-danger;
+    }
+  }
   .pull-right {
     padding-top: .1rem;
     font-size: .24rem;
@@ -943,4 +990,38 @@ white-space: nowrap;
   }
 }
 
+.filter-ul{
+  width: 100%;
+  @include flexbox();
+  @include align-items(center);
+  list-style: none;
+  background-color: #ffffff;
+  li{
+    position: relative;
+    @include flex(1);
+    padding:0 .2rem;
+    input{
+      text-align: center;
+      height: .88rem;
+    }
+    i{
+      position: absolute;
+      right: .2rem;
+      top: .2rem;
+      font-size: .32rem;
+    }
+  }
+}
 
+.history-list{
+  margin-top: .2rem;
+  .weui-panel__hd{
+    font-size: .28rem;
+  }
+  .my-preview {
+    display: block;
+    .weui-form-preview__bd{
+      font-size: .24rem;
+    }
+  }
+}
