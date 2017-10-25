@@ -1018,12 +1018,31 @@ white-space: nowrap;
   .weui-panel__hd{
     font-size: .28rem;
   }
+  .weui-panel__ft{
+    text-align: right;
+    padding: .2rem;
+    .weui-btn{
+      vertical-align: top;
+    }
+  }
   .my-preview {
     display: block;
     .weui-form-preview__bd{
       font-size: .24rem;
     }
   }
+}
+
+.tag-text{
+  display: inline-block;
+  width: .5rem;
+  height: .5rem;
+  line-height:.5rem;
+  font-size: .24rem;
+  @include border-radius(50%);
+  text-align: center;
+  background-color: $color-info;
+  color: #ffffff;
 }
 
 .total-box{
