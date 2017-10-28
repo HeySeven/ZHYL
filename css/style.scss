@@ -549,6 +549,21 @@ i.icon.icon-next, i.icon.icon-prev {
       top: 0;
     }
   }
+  .user-icon{
+    width: .9rem;
+    height: .9rem;
+    line-height:.9rem;
+    text-align: center;
+    background-color: $color-info;
+    color: #ffffff;
+    @include border-radius(50%);
+    font-size: .5rem;
+    margin-right: .2rem;
+  }
+  .check{
+    font-size: .4rem;
+    color: $color-success;
+  }
 }
 
 .statu-tag {
@@ -561,6 +576,10 @@ i.icon.icon-next, i.icon.icon-prev {
   }
   &.statu-success {
     background-color: $color-success;
+    color: #ffffff;
+  }
+  &.statu-info {
+    background-color: $color-info;
     color: #ffffff;
   }
 }
@@ -1054,7 +1073,10 @@ white-space: nowrap;
   }
 }
 
-
+.disc-info{
+  padding: .2rem .3rem 0;
+  color: $color-light;
+}
 
 
 
