@@ -1222,3 +1222,57 @@ white-space: nowrap;
     }
   }
 }
+
+.pj-panel{
+  .weui-panel__hd{
+    &:after{
+      display: none;
+    }
+    .pull-right{
+      padding-top: 0;
+      .iconfont{
+        color: $color-lighter;
+        &.selected{
+          color: $color-warning;
+        }
+        & + .iconfont{
+          margin-left: .1rem;
+        }
+        font-size: .36rem;
+      }
+    }
+  }
+  .weui-media-box__desc{
+    margin-top: .1rem;
+  }
+}
+
+.pj-tag-wrap{
+  .tag{
+    &.selected{
+      color: $color-info;
+      border-color: $color-info;
+    }
+    color: $color-light;
+    border-color: $color-lighter;
+  }
+}
+.textarea-wrap{
+  padding: .2rem 0;
+  .weui-textarea{
+    padding: 5px;
+    border:1px solid $color-border;
+    @include border-radius(2px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
