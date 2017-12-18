@@ -15,7 +15,10 @@ body, html {
   -webkit-font-smoothing: antialiased;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, "Pingfang SC", "Microsoft Yahei", "WenQuanYi Micro Hei", sans-serif;
 }
-
+html.overflow-hidden, html.overflow-hidden body{
+  height: 100%;
+  overflow: hidden;
+}
 img {
   max-width: 100%;
 }
@@ -1266,13 +1269,206 @@ white-space: nowrap;
   }
 }
 
+.live-page-wrap {
+  padding: .15rem .2rem;
+}
 
 
+.live-page-header {
+  padding: .15rem .4rem .2rem;
+  text-align: center;
+  background-color: #ffffff;
+  @include border-radius(.1rem);
+  img {
+    width: 1.14rem;
+    height: 1.14rem;
+    @include border-radius(50%);
+  }
+  dl {
+    margin-bottom: .1rem;
+    dt {
+      font-weight: normal;
+    }
+    dd {
+      font-size: .24rem;
+      color: $color-light;
+    }
+  }
+  p {
+    text-align: left;
+    font-size: .24rem;
+    color: #7e7d7d;
+    line-height: .3rem;
+    margin-bottom: .1rem;
+    max-height: .6rem;
+    overflow: hidden;
+    &.open {
+      max-height: inherit;
+    }
+  }
+  .show-all {
+    font-size: .22rem;
+    color: $color-danger;
+  }
+}
+
+.live-page-yq {
+  margin-top: .1rem;
+  padding: .15rem;
+  text-align: center;
+  background-color: #ffffff;
+  @include border-radius(.1rem);
+  .btn {
+    padding: .12rem .35rem;
+    @include border-radius(3px);
+    font-size: .22rem;
+  }
+}
+
+.live-content-body {
+  padding: .15rem 0;
+}
+
+.live-detail-wrap {
+  .live-item {
+    @include flexbox();
+    padding: .1rem 0;
+    .live-hd {
+      width: .66rem;
+      height: .66rem;
+      margin-right: .2rem;
+      img {
+        width: .66rem;
+        height: .66rem;
+        @include border-radius(50%);
+      }
+    }
+    .live-bd {
+      @include flex(1);
+    }
+  }
+}
 
 
+.live-author-name {
+  font-weight: bold;
+  font-size: .24rem;
+  margin-bottom: .1rem;
+}
+
+.live-text-box {
+  max-width: 4.2rem;
+  display: inline-block;
+  padding: .1rem .2rem;
+  background-color: #ffffff;
+  @include border-radius(0 .3rem .3rem .3rem);
+  font-size: .24rem;
+}
+
+.live-img-box {
+  max-width: 4.2rem;
+  display: inline-block;
+  padding: .1rem;
+  background-color: #ffffff;
+  @include border-radius(0 .3rem .3rem .3rem);
+  img {
+    border-radius: 0 0.2rem 0.2rem 0.2rem;
+    vertical-align: top;
+  }
+}
+
+.my-live-item {
+  .live-hd {
+    margin-right: 0;
+    margin-left: .2rem;
+  }
+  .live-author-name {
+    text-align: right;
+  }
+  .live-item-body {
+    text-align: right;
+  }
+  .live-text-box {
+    text-align: left;
+    color: #ffffff;
+    background-color: $color-primary;
+    @include border-radius(.3rem 0 .3rem .3rem);
+  }
+}
 
 
+.fix-btn-box {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  text-align: center;
+  z-index: 10;
+}
 
+
+.jia-reply {
+  @include flexbox();
+  @include align-items(center);
+  padding: .15rem;
+  @include box-shadow(0 -3px 2px rgba(0, 0, 0, .05));
+  .jia-reply-inner {
+    @include flex(1);
+    input {
+      -webkit-appearance: none;
+      width: 100%;
+      padding: 0 .15rem;
+      line-height: .5rem;
+      border: 1px solid #e5e5e5;
+      background-color: #f7f7f7;
+      color: #737272;
+      font-size: .26rem;
+      text-align: left;
+      &[disabled] {
+        opacity: .6;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    &.main-reply-inner {
+      input {
+        border-color: transparent transparent #e5e5e5 transparent;
+        background-color: transparent;
+      }
+    }
+  }
+  .reply-btn-img, .reply-btn-audio {
+    margin-left: .15rem;
+    color: #6c7379;
+    i {
+      position: relative;
+      top: -.03rem;
+      line-height: 1;
+      display: block;
+      font-size: .58rem;
+    }
+  }
+  .reply-btn-audio {
+    min-width: .88rem;
+    i {
+      top: 0;
+    }
+  }
+  .reply-btn-wrap {
+    padding-left: .15rem;
+    .reply-btn {
+      display: block;
+      line-height: .54rem;
+      padding: 0 .2rem;
+      background-color: $color-primary;
+      color: #ffffff;
+      @include border-radius(2px);
+      font-size: .2rem;
+    }
+  }
+}
 
 
 
