@@ -1459,6 +1459,7 @@ white-space: nowrap;
   .reply-btn-wrap {
     padding-left: .15rem;
     .reply-btn {
+      position: relative;
       display: block;
       line-height: .54rem;
       padding: 0 .2rem;
@@ -1466,6 +1467,14 @@ white-space: nowrap;
       color: #ffffff;
       @include border-radius(2px);
       font-size: .2rem;
+      input{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+      }
     }
   }
 }

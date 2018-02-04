@@ -1416,6 +1416,7 @@ table {
   .jia-reply .reply-btn-wrap {
     padding-left: .15rem; }
     .jia-reply .reply-btn-wrap .reply-btn {
+      position: relative;
       display: block;
       line-height: .54rem;
       padding: 0 .2rem;
@@ -1425,5 +1426,12 @@ table {
       -moz-border-radius: 2px;
       border-radius: 2px;
       font-size: .2rem; }
+      .jia-reply .reply-btn-wrap .reply-btn input {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0; }
 
 /*# sourceMappingURL=style.css.map */
