@@ -1434,4 +1434,12 @@ table {
         left: 0;
         opacity: 0; }
 
+.notice-tip {
+  background-color: #f7657d;
+  color: #ffffff !important;
+  padding: 2px 5px;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  border-radius: 0.2rem; }
+
 /*# sourceMappingURL=style.css.map */
