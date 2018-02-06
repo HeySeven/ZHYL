@@ -403,10 +403,22 @@ i.icon.icon-next, i.icon.icon-prev {
     -moz-align-items: center;
     align-items: center; }
   .tabbar .link-bar {
+    position: relative;
     color: #a3a1a0;
     line-height: 1;
     text-align: center;
     overflow: visible; }
+    .tabbar .link-bar.has-notice:before {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: .16rem;
+      height: .16rem;
+      background-color: #f7657d;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%; }
     .tabbar .link-bar.active {
       color: #5c93f7; }
     .tabbar .link-bar > i {

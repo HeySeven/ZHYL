@@ -319,10 +319,23 @@ i.icon.icon-next, i.icon.icon-prev {
     @include align-items(center);
   }
   .link-bar {
+    position: relative;
     color: #a3a1a0;
     line-height: 1;
     text-align: center;
     overflow: visible;
+    &.has-notice{
+      &:before{
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: .16rem;
+        height: .16rem;
+        background-color: $color-danger;
+        @include border-radius(50%);
+      }
+    }
     &.active {
       color: $color-info;
     }
