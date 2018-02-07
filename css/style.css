@@ -837,6 +837,15 @@ i.icon.icon-next, i.icon.icon-prev {
   text-align: center;
   font-size: .28rem;
   line-height: .28rem; }
+  .table-title:before, .table-title:after {
+    content: " ";
+    display: table; }
+  .table-title:after {
+    clear: both; }
+  .table-title a {
+    float: right;
+    color: #5c93f7;
+    font-size: 0.24rem; }
 
 .table-wrapper {
   position: relative;
@@ -1372,6 +1381,17 @@ table {
   background-color: #ffffff;
   text-align: center;
   z-index: 10; }
+  .fix-btn-box .weui-btn {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0; }
+    .fix-btn-box .weui-btn:before {
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0; }
+
+.weui-btn i {
+  font-size: inherit; }
 
 .weui-btn-area .weui-flex__item {
   padding-right: .1rem; }

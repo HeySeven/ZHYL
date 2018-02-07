@@ -819,6 +819,12 @@ i.icon.icon-next, i.icon.icon-prev {
   text-align: center;
   font-size: .28rem;
   line-height: .28rem;
+  @include clearfix();
+  a{
+    float: right;
+    color: $color-info;
+    font-size: $fz-xs;
+  }
 }
 
 .table-wrapper {
@@ -1419,8 +1425,18 @@ table {
   background-color: #ffffff;
   text-align: center;
   z-index: 10;
+  .weui-btn{
+    @include border-radius(0);
+    &:before{
+      @include border-radius(0);
+    }
+  }
 }
-
+.weui-btn{
+  i{
+    font-size: inherit;
+  }
+}
 .weui-btn-area {
   .weui-flex__item {
     padding-right: .1rem;
