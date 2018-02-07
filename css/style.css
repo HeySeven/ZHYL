@@ -1373,6 +1373,12 @@ table {
   text-align: center;
   z-index: 10; }
 
+.weui-btn-area .weui-flex__item {
+  padding-right: .1rem; }
+  .weui-btn-area .weui-flex__item + .weui-flex__item {
+    padding-left: .1rem;
+    padding-right: 0; }
+
 .jia-reply {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1453,5 +1459,15 @@ table {
   -webkit-border-radius: 0.2rem;
   -moz-border-radius: 0.2rem;
   border-radius: 0.2rem; }
+
+.weui-notification {
+  font-size: .24rem; }
+  .weui-notification .weui-notification__inner {
+    padding: .2rem; }
+  .weui-notification .weui-notification__content {
+    margin: 0 .2rem; }
+  .weui-notification .weui-notification__handle-bar {
+    width: 1rem;
+    height: .1rem; }
 
 /*# sourceMappingURL=style.css.map */
